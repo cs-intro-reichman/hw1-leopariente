@@ -6,6 +6,6 @@ public class NumWords {
 		int totalTens = number / 10 - (totalHundreds * 10);
 		int totalOnes = number - (totalHundreds * 100) - (totalTens * 10);
 
-		System.out.println(totalHundreds + " hundreds, " + totalTens + " tens, and " + totalOnes + " ones");
+		System.out.println(totalHundreds + " hundreds, " + totalTens + " tens, and " + totalOnes + " ones.");
 	}
 }
