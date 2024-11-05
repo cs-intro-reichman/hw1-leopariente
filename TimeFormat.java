@@ -6,7 +6,9 @@ public class TimeFormat {
 		hours = hours > 12 ? hours - 12 : hours;
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-		System.out.print(hours + ":" + minutes);
+		String formattedNumber = minutes < 10 ? "0" + minutes : Integer.toString(minutes);
+		System.out.print(hours + ":");
+		System.out.print(formattedNumber + " ");
 		System.out.print(prefix);
 	}
 }
